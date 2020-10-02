@@ -10,9 +10,9 @@ app = create_app()
 socketio = SocketIO(app)  # used for user communication
 
 
+
+
 # COMMUNICATION FUNCTIONS
-
-
 @socketio.on("event")
 def handle_my_custom_event(json, methods=["GET", "POST"]):
     """
